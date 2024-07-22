@@ -1,36 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import TrangChu from './page/users/TrangChu';
+import MainLayout from './MainLayout';
 import Shop from './page/users/Shop';
-import Footer from './component/Footer';
-import HeadID from './component/HeadID';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-
-
+import TrangChu from './page/users/TrangChu';
+import Login from './page/account/Login';
+import Register from './page/account/Register'
+import ShopSingle from './page/users/ShopSingle';
+import ProfileKh from './page/users/profileKH';
 
 function App() {
   return (
     <Router>
-      <div>
-        <HeadID/>
-        
-        <main>
-          <Routes>
-            <Route path="/" element={<TrangChu />} />
-            <Route path="/shop" element={<Shop />} />
-          </Routes>
-        </main>
-
-        <footer className="bg-dark" id="tempaltemo_footer">
-          <Footer/>
-        </footer>
-      </div>
+      <Routes>
+      <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<TrangChu />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/chitiet" element={<ShopSingle />} />
+          <Route path="/ttkhachhang" element={<ProfileKh />} />
+        </Route>
+      </Routes>
     </Router>
-
   );
 }
 
+
 export default App;
+

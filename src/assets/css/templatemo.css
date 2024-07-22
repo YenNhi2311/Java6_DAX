@@ -24,18 +24,48 @@ Table of contents
 15. Large devices (desktops, 992px and up)
 16. Extra large devices (large desktops, 1200px and up)
 --------------------------------------------- */
+/* background login */
 
+.bodyLogin {
+  background-image: url('../img/br.png');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
 
-.SP{
-height: 500px;
+.nav-icon {
+  position: relative;
 }
-.pictu{
-  width: 325px;
-  height: 260px;
+.dropdown-menu {
+  display: none; /* Ẩn dropdown menu */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Đảm bảo dropdown nằm trên các phần tử khác */
 }
+.dropdown-menu .dropdown-item {
+  padding: 6px 10px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Hiện menu khi di chuột vào biểu tượng */
+.nav-icon:hover .dropdown-menu {
+  display: block;
+}
+
 
 /* Typography */
-
 body, ul, li, p, a, label, input, div {
   font-family: 'Roboto', sans-serif;
   font-size: 18px !important;

@@ -10,10 +10,7 @@ import '../../assets/css/templatemo.min.css';
 export default class GioHang extends Component {
     render() {
         return (
-          
-                    
-
-                    <div className="row p-3 pt-5">
+                    <div className="row p-3 pt-6">
                         <div className="col-8" style={{ borderRight: '2px solid rgb(202, 200, 200)' }}>
                             <div className="table-responsive" style={{ height: '500px', overflow: 'auto' }}>
                                 <table className="table">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../../assets/css/fontawesome.css';
 import '../../assets/css/fontawesome.min.css';
 import '../../assets/css/slick-theme.css';

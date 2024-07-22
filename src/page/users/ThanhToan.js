@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
 // import bannerImage from '../assets/img/ip.jpg'; // Import the image
 
 export default class ThanhToan extends Component {
@@ -96,7 +95,7 @@ export default class ThanhToan extends Component {
                                         type="button"
                                         className="btn btn-success"
                                         style={{ width: '100%' }}
-                                        href="/HoanThanh" // Corrected href
+                                        href="/history" // Corrected href
                                     >
                                         Thanh toán khi nhận hàng
                                     </a>

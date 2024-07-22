@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import { Link } from 'react-router-dom';
 export default class LoaiSP extends Component {
     constructor(props) {
         super(props);
@@ -100,7 +101,7 @@ export default class LoaiSP extends Component {
                             <div className="col-md-4">
                                 <div className="card mb-4 product-wap rounded-0">
                                     <div className="card rounded-0">
-                                        <img className="card-img rounded-0 img-fluid" src="assets/img/shop_01.jpg" />
+                                        <img className="card-img rounded-0 img-fluid" src="../assets/img/shop_01.jpg" />
                                         <div className="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                             <ul className="list-unstyled">
                                                 <li><a className="btn btn-success text-white" href="shop-single.html"><i className="far fa-heart" /></a></li>
@@ -110,7 +111,7 @@ export default class LoaiSP extends Component {
                                         </div>
                                     </div>
                                     <div className="card-body">
-                                        <a href="shop-single.html" className="h3 text-decoration-none">Oupidatat non</a>
+                                    <Link to="/chitiet"  className="h3 text-decoration-none">Oupidatat non</Link>  
                                         <ul className="w-100 list-unstyled d-flex justify-content-between mb-0">
                                             <li>M/L/X/XL</li>
                                             <li className="pt-2">

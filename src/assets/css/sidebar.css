@@ -1,0 +1,14 @@
+.hover-menu:hover {
+    color: green;
+}
+
+.bg-item-menu {
+    padding-left: 20px;
+}
+
+.item-menu:hover {
+    background: rgb(122, 170, 122);
+    padding-left: 0px;
+    margin-left: 0px;
+
+}
